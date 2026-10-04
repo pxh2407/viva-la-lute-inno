@@ -65,10 +65,11 @@
   .pulsanti a:hover, .pulsanti a:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.35); outline: none; }
   .voce { background: var(--oro); color: var(--notte); }
   .karaoke { background: transparent; color: var(--crema); }
+  .spartito { background: transparent; color: var(--oro-chiaro); border-style: dashed !important; font-size: 19px !important; min-height: 52px !important; }
   .pulsanti small { font-weight: 400; font-size: 16px; opacity: .85; }
 
   /* come si usa */
-  .guida { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .guida { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
   .guida div { border: 1px solid rgba(214,176,80,.35); border-radius: 16px; padding: 18px 20px; background: rgba(9,38,26,.5); }
   .guida h3 { font-family: Georgia, serif; color: var(--oro-chiaro); font-size: 23px; margin-bottom: 4px; }
   .guida p { color: var(--tenue); }
@@ -110,6 +111,7 @@
         <div class="pulsanti">
           <a class="voce" href="https://pxh2407.github.io/viva-la-lute-claudio/">🎤 Con la voce <small>· ascolta e segui</small></a>
           <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-claudio-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
+          <a class="spartito" href="spartito-claudio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>· da stampare (PDF)</small></a>
         </div>
       </div>
     </article>
@@ -128,6 +130,7 @@
         <div class="pulsanti">
           <a class="voce" href="https://pxh2407.github.io/viva-la-lute/">🎤 Con la voce <small>· ascolta e segui</small></a>
           <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
+          <a class="spartito" href="spartito-nuccio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>· da stampare (PDF)</small></a>
         </div>
       </div>
     </article>
@@ -143,6 +146,11 @@
       <h3>🎵 Karaoke</h3>
       <p>Solo musica, senza voce: le parole scorrono allo stesso modo e <b>la voce siete voi</b>.
         Perfetto per cantare in gruppo.</p>
+    </div>
+    <div>
+      <h3>📄 Spartito</h3>
+      <p>La melodia completa con le parole sotto le note, da stampare.
+        È trascritta dalla registrazione: chi suona la verifichi a orecchio.</p>
     </div>
   </section>
 
