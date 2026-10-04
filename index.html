@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viva la LUTE – le due versioni dell'inno</title>
+<meta name="description" content="LUTE Milazzo: l'inno Viva la LUTE in due versioni, di Claudio e di Nuccio. Ascoltalo con la voce o cantalo tu con il karaoke.">
+<!-- anteprima del collegamento su WhatsApp, Facebook, email -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="LUTE Milazzo">
+<meta property="og:title" content="Viva la LUTE – le due versioni dell'inno">
+<meta property="og:description" content="La versione di Claudio e quella di Nuccio: con la voce o in karaoke. Cantiamo tutti insieme!">
+<meta property="og:image" content="https://pxh2407.github.io/viva-la-lute-inno/anteprima-v1.jpg">
+<meta property="og:image:secure_url" content="https://pxh2407.github.io/viva-la-lute-inno/anteprima-v1.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Viva la LUTE - LUTE Milazzo">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --verde: #1b5e3f; --scuro: #0e3423; --notte: #09261a; --oro: #d6b050; --oro-chiaro: #e8c766;
+          --crema: #f8f4ea; --tenue: #cfdcd3; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh; color: var(--crema); font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, var(--verde), var(--scuro) 60%, var(--notte));
+    background-attachment: fixed; line-height: 1.55; font-size: 19px;
+  }
+  .pagina { max-width: 1120px; margin: 0 auto; padding: 44px 16px 40px; }
+
+  /* intestazione */
+  header { text-align: center; }
+  .cartiglio { display: inline-block; background: var(--crema); border: 2px solid var(--oro);
+               border-radius: 16px; padding: 12px 22px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .cartiglio img { display: block; width: 210px; max-width: 52vw; height: auto; }
+  .sede { margin-top: 22px; color: var(--oro); font-weight: 700; letter-spacing: 2px; font-size: 16px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(44px, 9vw, 76px);
+       line-height: 1.05; margin-top: 6px; text-shadow: 0 4px 0 rgba(0,0,0,.35); }
+  .motto { font-family: Georgia, serif; font-style: italic; color: var(--oro-chiaro); font-size: clamp(24px, 4.5vw, 32px); }
+  .filetto { width: 220px; height: 2px; background: linear-gradient(90deg, transparent, var(--oro), transparent);
+             margin: 18px auto 22px; }
+  .intro { max-width: 760px; margin: 0 auto; font-size: 20px; color: var(--tenue); }
+  .intro b { color: var(--crema); }
+
+  /* schede delle due versioni */
+  .versioni { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+  .scheda { background: linear-gradient(180deg, rgba(9,38,26,.92), rgba(9,38,26,.78));
+            border: 1px solid rgba(214,176,80,.55); border-radius: 22px; overflow: hidden;
+            box-shadow: 0 18px 44px rgba(0,0,0,.4); display: flex; flex-direction: column; }
+  .scheda img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 1px solid rgba(214,176,80,.55); }
+  .corpo { padding: 24px 26px 28px; display: flex; flex-direction: column; flex: 1; }
+  .autore { color: var(--oro); font-weight: 700; letter-spacing: 1.5px; font-size: 15px; text-transform: uppercase; }
+  .scheda h2 { font-family: Georgia, serif; font-size: clamp(30px, 4vw, 38px); line-height: 1.15; margin: 4px 0 14px; }
+  .scheda p { color: var(--tenue); margin-bottom: 12px; }
+  .scheda p b { color: var(--crema); }
+  .dati { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 18px; }
+  .dati li { border: 1px solid rgba(214,176,80,.6); color: var(--oro-chiaro); border-radius: 999px;
+             padding: 4px 14px; font-size: 16px; }
+  .adatta { font-size: 17px; border-left: 3px solid var(--oro); padding-left: 12px; margin: 4px 0 22px; }
+  .pulsanti { display: grid; gap: 12px; margin-top: auto; }
+  .pulsanti a { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none;
+                font-size: 21px; font-weight: 700; padding: 15px 18px; border-radius: 14px; min-height: 60px;
+                border: 2px solid var(--oro); transition: transform .15s, box-shadow .15s; }
+  .pulsanti a:hover, .pulsanti a:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.35); outline: none; }
+  .voce { background: var(--oro); color: var(--notte); }
+  .karaoke { background: transparent; color: var(--crema); }
+  .pulsanti small { font-weight: 400; font-size: 16px; opacity: .85; }
+
+  /* come si usa */
+  .guida { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .guida div { border: 1px solid rgba(214,176,80,.35); border-radius: 16px; padding: 18px 20px; background: rgba(9,38,26,.5); }
+  .guida h3 { font-family: Georgia, serif; color: var(--oro-chiaro); font-size: 23px; margin-bottom: 4px; }
+  .guida p { color: var(--tenue); }
+  footer { text-align: center; margin-top: 40px; color: var(--tenue); font-size: 16px; }
+  footer .filetto { margin: 0 auto 14px; }
+
+  @media (max-width: 860px) {
+    .versioni, .guida { grid-template-columns: 1fr; }
+    .pagina { padding-top: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <div class="cartiglio"><img src="logo.png" alt="Logo LUTE"></div>
+    <div class="sede">LUTE MILAZZO</div>
+    <h1>Viva la LUTE!</h1>
+    <div class="motto">evviva la vita!</div>
+    <div class="filetto"></div>
+    <p class="intro">Il nostro inno in <b>due versioni</b>, nate dalle stesse parole ma con due anime diverse.
+      Scegli quella che preferisci: <b>ascoltala con la voce</b> seguendo il testo che scorre,
+      oppure <b>cantala tu</b> con il karaoke.</p>
+  </header>
+
+  <main class="versioni">
+    <!-- prima Claudio, poi Nuccio (ordine voluto) -->
+    <article class="scheda">
+      <img src="claudio-riquadro.jpg" alt="Copertina della versione di Claudio: porta aperta e libro">
+      <div class="corpo">
+        <div class="autore">Versione di Claudio</div>
+        <h2>Canzone festosa</h2>
+        <ul class="dati"><li>Ritmo vivace</li><li>2 min 51 s</li><li>Allegra e leggera</li></ul>
+        <p>Un brano <b>allegro e travolgente</b>, dal passo svelto e dalla durata compatta:
+          le strofe scorrono veloci e il ritornello arriva presto, facile da imparare al primo ascolto.</p>
+        <p>Il finale, con il suo <b>«Uno, due, tre!»</b>, invita tutti a cantare e a battere le mani:
+          è la versione che mette subito di buon umore.</p>
+        <p class="adatta">Ideale per i <b>momenti di festa</b>: gite, cene sociali, la chiusura di un incontro.</p>
+        <div class="pulsanti">
+          <a class="voce" href="https://pxh2407.github.io/viva-la-lute-claudio/">🎤 Con la voce <small>· ascolta e segui</small></a>
+          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-claudio-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="scheda">
+      <img src="nuccio-riquadro.jpg" alt="Copertina della versione di Nuccio">
+      <div class="corpo">
+        <div class="autore">Versione di Nuccio</div>
+        <h2>Inno corale solenne</h2>
+        <ul class="dati"><li>Passo di marcia</li><li>4 min 33 s</li><li>Coro, ottoni e timpani</li></ul>
+        <p>Un vero <b>inno, ampio e maestoso</b>: un coro di voci maschili e femminili accompagnato
+          da fanfare di ottoni e timpani, su un passo di marcia moderato e solenne.</p>
+        <p>Cresce di intensità strofa dopo strofa fino al <b>ritornello finale</b>, cantato a piena voce:
+          trasmette orgoglio e senso di appartenenza.</p>
+        <p class="adatta">Ideale per le <b>occasioni ufficiali</b>: inaugurazione dell'anno accademico, cerimonie, celebrazioni.</p>
+        <div class="pulsanti">
+          <a class="voce" href="https://pxh2407.github.io/viva-la-lute/">🎤 Con la voce <small>· ascolta e segui</small></a>
+          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <section class="guida" aria-label="Come si usa">
+    <div>
+      <h3>🎤 Con la voce</h3>
+      <p>Si ascolta la canzone completa. Le parole scorrono sullo schermo e la riga cantata si colora d'oro:
+        basta seguirla.</p>
+    </div>
+    <div>
+      <h3>🎵 Karaoke</h3>
+      <p>Solo musica, senza voce: le parole scorrono allo stesso modo e <b>la voce siete voi</b>.
+        Perfetto per cantare in gruppo.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="filetto"></div>
+    LUTE Milazzo · Libera Università per la Terza Età
+  </footer>
+</div>
+</body>
+</html>
