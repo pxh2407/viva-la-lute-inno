@@ -67,6 +67,7 @@
   .karaoke { background: transparent; color: var(--crema); }
   .spartito { background: transparent; color: var(--oro-chiaro); border-style: dashed !important; font-size: 19px !important; min-height: 52px !important; }
   .pulsanti small { font-weight: 400; font-size: 16px; opacity: .85; }
+  .pulsanti small::before { content: "· "; }
 
   /* come si usa */
   .guida { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -79,6 +80,17 @@
   @media (max-width: 860px) {
     .versioni, .guida { grid-template-columns: 1fr; }
     .pagina { padding-top: 32px; }
+  }
+  /* solo telefono: righe di testo più regolari, pulsanti ed etichette ordinati */
+  @media (max-width: 560px) {
+    .corpo { padding: 20px 18px 22px; }
+    .scheda p, .guida p, .adatta, .intro { text-wrap: pretty; hyphens: auto; -webkit-hyphens: auto; }
+    .dati { gap: 6px; }
+    .dati li { font-size: 14px; padding: 3px 11px; }
+    .pulsanti a { flex-direction: column; gap: 0; line-height: 1.2; padding: 12px 14px; }
+    .pulsanti small { font-size: 15px; margin-top: 2px; }
+    .pulsanti small::before { content: none; }
+    .scheda h2 { font-size: 30px; }
   }
 </style>
 </head>
@@ -109,9 +121,9 @@
           è la versione che mette subito di buon umore.</p>
         <p class="adatta">Ideale per i <b>momenti di festa</b>: gite, cene sociali, la chiusura di un incontro.</p>
         <div class="pulsanti">
-          <a class="voce" href="https://pxh2407.github.io/viva-la-lute-claudio/">🎤 Con la voce <small>· ascolta e segui</small></a>
-          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-claudio-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
-          <a class="spartito" href="spartito-claudio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>· da stampare (PDF)</small></a>
+          <a class="voce" href="https://pxh2407.github.io/viva-la-lute-claudio/">🎤 Con la voce <small>ascolta e segui</small></a>
+          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-claudio-karaoke/">🎵 Karaoke <small>canta tu</small></a>
+          <a class="spartito" href="spartito-claudio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>da stampare (PDF)</small></a>
         </div>
       </div>
     </article>
@@ -128,9 +140,9 @@
           trasmette orgoglio e senso di appartenenza.</p>
         <p class="adatta">Ideale per le <b>occasioni ufficiali</b>: inaugurazione dell'anno accademico, cerimonie, celebrazioni.</p>
         <div class="pulsanti">
-          <a class="voce" href="https://pxh2407.github.io/viva-la-lute/">🎤 Con la voce <small>· ascolta e segui</small></a>
-          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-karaoke/">🎵 Karaoke <small>· canta tu</small></a>
-          <a class="spartito" href="spartito-nuccio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>· da stampare (PDF)</small></a>
+          <a class="voce" href="https://pxh2407.github.io/viva-la-lute/">🎤 Con la voce <small>ascolta e segui</small></a>
+          <a class="karaoke" href="https://pxh2407.github.io/viva-la-lute-karaoke/">🎵 Karaoke <small>canta tu</small></a>
+          <a class="spartito" href="spartito-nuccio-v1.pdf" target="_blank" rel="noopener">📄 Spartito <small>da stampare (PDF)</small></a>
         </div>
       </div>
     </article>
